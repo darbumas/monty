@@ -2,10 +2,10 @@
 /**
  * _nop_opcode - ƒ() iddle.
  * @stackPtr: pointer to the top of the stack.
- * @l_num: line number in the file.
+ * @l_n: line number in the file.
  * Return: nothing
  */
-void _nop_opcode(__attribute__((unused)) stack_t **stackPtr, unsigned int l_num)
+void _nop_opcode(__attribute__((unused)) stack_t **stackPt,
+		__attribute__((unused)) unsigned int l_n)
 {
-	l_num += 0;
 }
