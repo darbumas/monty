@@ -1,8 +1,11 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
 
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -34,5 +37,27 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct global_variables - global variables accessible to all files.
+ * @oc_arg: pointer to the arg of the opcode.
+ * @buf: pointer to the buffer for the line in opened files.
+ * @fd: file descriptor;
+ *
+ * Description: global variables to help construct our stack
+ */
+typedef struct global_variables
+{
+	char *oc_arg;
+	char *buf;
+	FILE *fd;
+} glob_var;
 
+glob_var *c;
+
+void _geterrmsg(int f, unsigned int line_num, stack_t **stackPtr);
+void reclaim_mem(stack_t **stackPtr, int f);
+int _isdigit(unsigned int line_num, stack_t **stackPtr);
+void _push_opcode(stack_t **stackPtr, unsigned int line_num);
+void _pall_opcode(stack_t **stackPtr, unsigned int line_num);
+stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num);
 #endif
