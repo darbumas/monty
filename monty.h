@@ -61,5 +61,6 @@ void _push_opcode(stack_t **stackPtr, unsigned int line_num);
 void _pall_opcode(stack_t **stackPtr, unsigned int line_num);
 stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num);
 void _pint_opcode(stack_t **stackPtr, unsigned int l_num);
+void _pop_opcode(stack_t **stackPtr, unsigned int l_num);
 
 #endif
