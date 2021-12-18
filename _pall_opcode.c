@@ -1,6 +1,7 @@
 #include "monty.h"
 /**
- * _pall_opcode - ƒ() prints all the values on the stack, starting from the top.
+ * _pall_opcode - ƒ() prints all the values on the stack,
+ * starting from the top.
  * @stackPtr: pointer to the top of the stack.
  * @line_num: the line number in the file.
  * Return: void.

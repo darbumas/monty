@@ -1,7 +1,7 @@
 #include "monty.h"
 /**
- * reclaim_mem: ƒ() deallocates memory.
- * stackPtr: pointer to the top of the stack
+ * reclaim_mem - ƒ() deallocates memory.
+ * @stackPtr: pointer to the top of the stack
  * @f: flag, if set to 1, flush buffer and close file descriptor.
  * Return: Nothing.
  */

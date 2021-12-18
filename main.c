@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 	size_t n = 0;
 	ssize_t count;
 	FILE *stream;
-	char *linePtr = NULL , *string = NULL, *filename, *oc;
+	char *linePtr = NULL, *string = NULL, *filename, *oc;
 	stack_t *stackPtr = NULL;
 
 	if (argc != 2)
