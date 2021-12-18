@@ -17,6 +17,8 @@ void _geterrmsg(int f, unsigned int line_num, stack_t **stackPtr)
 		fprintf(stderr, "Error: malloc failed\n");
 	else if (f == 2)
 		fprintf(stderr, "L%d: usage: push integer\n", line_num);
+	else if (f == 3)
+		fprintf(stderr, "L%d: can't pint, stack empty\n", line_num);
 	reclaim_mem(stackPtr, 1);
 	exit(EXIT_FAILURE);
 }
