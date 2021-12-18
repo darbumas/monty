@@ -23,7 +23,7 @@ void _push_opcode(stack_t **stackPtr, unsigned int line_num)
 	mod_int = atoi(c->oc_arg);
 	new_node->n = mod_int;
 
-	if(*stackPtr != NULL)
+	if (*stackPtr != NULL)
 	{
 		(*stackPtr)->prev = new_node;
 		new_node->next = *stackPtr;
@@ -46,8 +46,8 @@ int _isdigit(unsigned int line_num, stack_t **stackPtr)
 		_geterrmsg(2, line_num, stackPtr);
 	while (c->oc_arg[i] != '\0')
 	{
-		if ((c->oc_arg[i] < 48 || c->oc_arg[i] > 57) &&
-			c->oc_arg[i] != 45) return (0);
+		if ((c->oc_arg[i] < 48 || c->oc_arg[i] > 57) && c->oc_arg[i] != 45)
+			return (0);
 		i++;
 	}
 	return (1);
