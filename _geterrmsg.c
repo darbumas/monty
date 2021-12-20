@@ -38,6 +38,8 @@ void _geterrmsg(int f, unsigned int line_num, stack_t **stackPtr)
 	else if (f == 12)
 		fprintf(stderr, "L%d: can't pchar, value out of range\n",
 				line_num);
+	else if (f == 13)
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_num);
 	reclaim_mem(stackPtr, 1);
 	exit(EXIT_FAILURE);
 }
