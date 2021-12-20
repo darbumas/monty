@@ -64,6 +64,5 @@ void _pint_opcode(stack_t **stackPtr, unsigned int l_num);
 void _pop_opcode(stack_t **stackPtr, unsigned int l_num);
 void _swap_opcode(stack_t **stackPtr, unsigned int l_num);
 void _add_opcode(stack_t **stackPtr, unsigned int l_num);
-void _nop_opcode(__attribute__((unused)) stack_t **stackPtr,
-		__attribute__((unused)) unsigned int l_n);
+void _nop_opcode(stack_t **stackPtr, unsigned int l_n);
 #endif
