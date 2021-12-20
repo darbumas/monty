@@ -72,4 +72,5 @@ void _mod_opcode(stack_t **stackPtr, unsigned int l_num);
 void _pchar_opcode(stack_t **stackPtr, unsigned int l_num);
 void _pstr_opcode(stack_t **stackPtr, unsigned int l_num);
 void _rotl_opcode(stack_t **stackPtr, unsigned int l_num);
+void _rotr_opcode(stack_t **stackPtr, unsigned int l_num);
 #endif

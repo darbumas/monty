@@ -4,7 +4,7 @@
  * @stackPtr: The pointer to the top of the stack.
  * @l_num: line number in the file.
  * Return: Nothing
-
+ *
  * Description: The top element of the stack becomes the last one,
  * and the second top element of the stack becomes the first one.
  */
