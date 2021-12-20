@@ -25,6 +25,8 @@ void _geterrmsg(int f, unsigned int line_num, stack_t **stackPtr)
 		fprintf(stderr, "L%d: can't swap, stack too short\n", line_num);
 	else if (f == 6)
 		fprintf(stderr, "L%d: can't add, stack too short\n", line_num);
+	else if (f == 7)
+		fprintf(stderr, "L%d: can't sub, stack too short\n", line_num);
 	reclaim_mem(stackPtr, 1);
 	exit(EXIT_FAILURE);
 }
