@@ -13,6 +13,10 @@ stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num)
 	instruction_t fnc_arr[] = {
 		{"push", _push_opcode},
 		{"pall", _pall_opcode},
+		{"pint", _pint_opcode},
+		{"swap", _swap_opcode},
+		{"add", _add_opcode},
+		{"nop", _nop_opcode},
 		{NULL, NULL}
 	};
 
@@ -25,7 +29,7 @@ stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num)
 		}
 		i++;
 	}
-	if (i == 3)
+	if (i == 7)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", l_num, oc);
 		if (stackPtr != NULL)
