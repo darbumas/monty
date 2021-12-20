@@ -29,7 +29,7 @@ stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num)
 		}
 		i++;
 	}
-	if (i == 7)
+	if (i == 6)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", l_num, oc);
 		if (stackPtr != NULL)
