@@ -66,4 +66,5 @@ void _swap_opcode(stack_t **stackPtr, unsigned int l_num);
 void _add_opcode(stack_t **stackPtr, unsigned int l_num);
 void _nop_opcode(stack_t **stackPtr, unsigned int l_n);
 void _sub_opcode(stack_t **stackPtr, unsigned int l_num);
+void _div_opcode(stack_t **stackPtr, unsigned int l_num);
 #endif
