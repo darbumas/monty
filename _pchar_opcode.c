@@ -8,7 +8,7 @@
 void _pchar_opcode(stack_t **stackPtr, unsigned int l_num)
 {
 	if (*stackPtr == NULL)
-		_geterrmsg(12, l_num, stackPtr);
+		_geterrmsg(13, l_num, stackPtr);
 	else if ((*stackPtr)->n >= 0 && (*stackPtr)->n <= 255)
 		printf("%c\n", (*stackPtr)->n);
 	else
