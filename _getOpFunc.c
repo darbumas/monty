@@ -23,6 +23,7 @@ stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num)
 		{"mod", _mod_opcode},
 		{"pchar", _pchar_opcode},
 		{"pstr", _pstr_opcode},
+		{"rotl", _rotl_opcode},
 		{NULL, NULL}
 	};
 
@@ -35,7 +36,7 @@ stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num)
 		}
 		i++;
 	}
-	if (i == 12)
+	if (i == 13)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", l_num, oc);
 		if (stackPtr != NULL)
