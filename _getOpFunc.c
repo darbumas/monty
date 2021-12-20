@@ -20,6 +20,7 @@ stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num)
 		{"sub", _sub_opcode},
 		{"div", _div_opcode},
 		{"mul", _mul_opcode},
+		{"mod", _mod_opcode},
 		{NULL, NULL}
 	};
 
@@ -32,7 +33,7 @@ stack_t *_getOpFunc(stack_t **stackPtr, char *oc, unsigned int l_num)
 		}
 		i++;
 	}
-	if (i == 9)
+	if (i == 10)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", l_num, oc);
 		if (stackPtr != NULL)

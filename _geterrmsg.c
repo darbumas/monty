@@ -33,6 +33,8 @@ void _geterrmsg(int f, unsigned int line_num, stack_t **stackPtr)
 		fprintf(stderr, "L%d: division by zero\n", line_num);
 	else if (f == 10)
 		fprintf(stderr, "L%d: can't mul, stack too short\n", line_num);
+	else if (f == 11)
+		fprintf(stderr, "L%d: can't mod, stack too short\n", line_num);
 	reclaim_mem(stackPtr, 1);
 	exit(EXIT_FAILURE);
 }
